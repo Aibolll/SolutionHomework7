@@ -33,7 +33,7 @@ public class ControlTower implements TowerMediator {
     private void clearRunwayForEmergency(Aircraft emergencyAircraft) {
         landingQueue.remove(emergencyAircraft); // in case it's already in queue
         landingQueue.addFirst(emergencyAircraft); // front of the queue
-        System.out.println("✅ Emergency aircraft " + emergencyAircraft.getId() + " prioritized for landing.");
+        System.out.println("Emergency aircraft " + emergencyAircraft.getId() + " prioritized for landing.");
 
         for (Aircraft a : aircraftList) {
             if (!a.equals(emergencyAircraft)) {
