@@ -5,7 +5,7 @@ import AirportTowerSimulator.aircraft.Aircraft;
 import java.util.*;
 
 public class ControlTower implements TowerMediator {
-    private Queue<Aircraft> landingQueue = new LinkedList<>();
+    private Deque<Aircraft> landingQueue = new LinkedList<>();
     private Queue<Aircraft> takeoffQueue = new LinkedList<>();
     private List<Aircraft> aircraftList = new ArrayList<>();
     private boolean isRunwayFree = true;
