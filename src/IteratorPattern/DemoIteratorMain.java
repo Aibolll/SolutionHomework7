@@ -42,7 +42,7 @@ public class DemoIteratorMain {
             System.out.println(binge.next());
         }
 
-        // --- NEW PART ---
+        // NEW PART
         System.out.println("\n== Skip Intro Iterator ==");
         SkipIntroIterator skipIntro = new SkipIntroIterator(new SeasonIterator(s1), 90);
         while (skipIntro.hasNext()) {
